@@ -1,0 +1,27 @@
+{
+	"posts": [{
+		"id": 1,
+		"title": "posts - title data",
+		"author": "posts - author data"
+	}],
+	"profile": {
+		"id": 1,
+		"title": "profile - title data",
+		"isopen": false
+	},
+	"comments": {
+		"id": 1,
+		"title": "comments - title data",
+		"author": "comments - author data"
+	},
+	"public_data": {
+		"id": 1,
+		"title": "public_data - title data",
+		"author": "public_dataclear - author data"
+	},
+	"danger_data": {
+		"id": 1,
+		"title": "public_data - title data",
+		"author": "public_dataclear - author data"
+	}
+}

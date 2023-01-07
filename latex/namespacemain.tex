@@ -1,0 +1,112 @@
+\hypertarget{namespacemain}{}\doxysection{main Namespace Reference}
+\label{namespacemain}\index{main@{main}}
+
+
+This is test project for my new job.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacemain_a3196a8db2d0e2aa616b1ef42b92b0a9e}{it\+\_\+is\+\_\+first\+\_\+run}} (config\+\_\+path)
+\item 
+int \mbox{\hyperlink{namespacemain_a59f833aeef74af96a83b865aa378cc2e}{is\+\_\+start}} (str config\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacemain_a7a7d21c8bbc3b73d7fb7432afd95654d}{create\+\_\+config\+\_\+file}} (str config\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacemain_ac8de72dcab82f0cad55f3f21fab2e819}{set\+\_\+config}} (str config\+\_\+path)
+\item 
+str \mbox{\hyperlink{namespacemain_a13c532106df8b03b8c9bd804074dfcc9}{create\+\_\+request}} (aiohttp.\+Client\+Session session, str url)
+\item 
+def \mbox{\hyperlink{namespacemain_a221fdc1cc322e42356188472cc805f8e}{create\+\_\+async\+\_\+requests}} ()
+\item 
+def \mbox{\hyperlink{namespacemain_af613cea4cba4fb7de8e40896b3368945}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacemain_ab54a1122241ecf5019a27ce49b38c044}\label{namespacemain_ab54a1122241ecf5019a27ce49b38c044}} 
+str {\bfseries config\+\_\+template} = \char`\"{}\char`\"{}\char`\"{}IS\+\_\+\+START=0\char`\"{}\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em configuration template \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is test project for my new job. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemain_a221fdc1cc322e42356188472cc805f8e}\label{namespacemain_a221fdc1cc322e42356188472cc805f8e}} 
+\index{main@{main}!create\_async\_requests@{create\_async\_requests}}
+\index{create\_async\_requests@{create\_async\_requests}!main@{main}}
+\doxysubsubsection{\texorpdfstring{create\_async\_requests()}{create\_async\_requests()}}
+{\footnotesize\ttfamily def main.\+create\+\_\+async\+\_\+requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function send asyncronious requests on urls:
+    "http://localhost:3000/posts",
+    "http://localhost:3000/profile",
+    "http://localhost:3000/comments",
+    "http://localhost:3000/public_data",
+    "http://localhost:3000/danger_data",
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_a7a7d21c8bbc3b73d7fb7432afd95654d}\label{namespacemain_a7a7d21c8bbc3b73d7fb7432afd95654d}} 
+\index{main@{main}!create\_config\_file@{create\_config\_file}}
+\index{create\_config\_file@{create\_config\_file}!main@{main}}
+\doxysubsubsection{\texorpdfstring{create\_config\_file()}{create\_config\_file()}}
+{\footnotesize\ttfamily  None main.\+create\+\_\+config\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{config\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates new config file
+
+@type  config_path:  str 
+@param config_path:  path to config file.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_a13c532106df8b03b8c9bd804074dfcc9}\label{namespacemain_a13c532106df8b03b8c9bd804074dfcc9}} 
+\index{main@{main}!create\_request@{create\_request}}
+\index{create\_request@{create\_request}!main@{main}}
+\doxysubsubsection{\texorpdfstring{create\_request()}{create\_request()}}
+{\footnotesize\ttfamily  str main.\+create\+\_\+request (\begin{DoxyParamCaption}\item[{aiohttp.\+Client\+Session}]{session,  }\item[{str}]{url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send one request 
+
+@param url: url address for request
+@param session: ClientSession \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_a59f833aeef74af96a83b865aa378cc2e}\label{namespacemain_a59f833aeef74af96a83b865aa378cc2e}} 
+\index{main@{main}!is\_start@{is\_start}}
+\index{is\_start@{is\_start}!main@{main}}
+\doxysubsubsection{\texorpdfstring{is\_start()}{is\_start()}}
+{\footnotesize\ttfamily  int main.\+is\+\_\+start (\begin{DoxyParamCaption}\item[{str}]{config\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}retrun IS_START flag from config file\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_a3196a8db2d0e2aa616b1ef42b92b0a9e}\label{namespacemain_a3196a8db2d0e2aa616b1ef42b92b0a9e}} 
+\index{main@{main}!it\_is\_first\_run@{it\_is\_first\_run}}
+\index{it\_is\_first\_run@{it\_is\_first\_run}!main@{main}}
+\doxysubsubsection{\texorpdfstring{it\_is\_first\_run()}{it\_is\_first\_run()}}
+{\footnotesize\ttfamily  bool main.\+it\+\_\+is\+\_\+first\+\_\+run (\begin{DoxyParamCaption}\item[{}]{config\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}function that check if script runing first time (by checking if config file allrady exists).\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_af613cea4cba4fb7de8e40896b3368945}\label{namespacemain_af613cea4cba4fb7de8e40896b3368945}} 
+\index{main@{main}!main@{main}}
+\index{main@{main}!main@{main}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def main.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}After the first launch of the application, a configuration file with the IS_START=0 flag is created.
+If the IS_START flag is 0, then the application offers to set it to 1, depending on user input, or does not set this flag, after which it restarts.
+If the IS_START flag is 1, then go to the next step
+
+The application starts working and requests 5 different requests from the server (we will provide the server with data and access description).
+After the responses for all requests are received, the application should print the responses from the requests in plain text to the console
+
+After all requests have been processed, the application displays the text "Job completed" and leaves the console window open.
+We consider that the work of the application is over.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemain_ac8de72dcab82f0cad55f3f21fab2e819}\label{namespacemain_ac8de72dcab82f0cad55f3f21fab2e819}} 
+\index{main@{main}!set\_config@{set\_config}}
+\index{set\_config@{set\_config}!main@{main}}
+\doxysubsubsection{\texorpdfstring{set\_config()}{set\_config()}}
+{\footnotesize\ttfamily  None main.\+set\+\_\+config (\begin{DoxyParamCaption}\item[{str}]{config\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set flag IS_START in configuration file to 1
+
+@type  config_path:  str 
+@param config_path:  path to config file.
+\end{DoxyVerb}
+ 
