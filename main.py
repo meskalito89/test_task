@@ -120,8 +120,9 @@ def main():
                 set_config(config_path)
             continue
         else:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.new_event_loop()
             loop.run_until_complete(create_async_requests())
+
             break
 
     print("The work is done")
