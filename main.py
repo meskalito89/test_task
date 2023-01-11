@@ -1,10 +1,5 @@
 """! @brief This is test project for my new job."""
 
-# @section author_doxygen_example Author(s)
-# - Created by John Woolsey on 05/27/2020.
-# - Modified by John Woolsey on 06/11/2020.
-#
-# Copyright (c) 2020 Woolsey Workshop.  All rights reserved.
 
 from os import path
 from pdb import set_trace
